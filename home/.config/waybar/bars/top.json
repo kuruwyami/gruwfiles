@@ -12,8 +12,12 @@
     "clock"
   ],
   "hyprland/workspaces": {
-    "format2": "!",
-    "format": " ",
+    "format":"{icon}",
+    "format-icons": {
+    "urgent": "  ",
+    "active": "  ",
+    "default": "  "
+    },
     "on-click": "activate"
  
   },
@@ -28,17 +32,17 @@
     "modules": [
       "tray",
       "pulseaudio#mic",
-      "pulseaudio",
       "backlight",
-      "battery"
+      "pulseaudio"
     ]
   },
   "group/scripts": {
     "orientation": "horizontal",
     "modules": [
       "network",
-      "hyprland/submap",
-      "hyprland/window"
+      "battery",
+      "custom/weather",
+      "hyprland/submap"
     ]
   },
   "group/hardware": {
@@ -48,7 +52,7 @@
       "network",
       "memory",
       "disk",
-      "cpu",
+      "cpu"
     ]
   },
   "pulseaudio#mic": {
@@ -126,7 +130,7 @@
     "tooltip": false
   },
   "clock": {
-    "format": "{:%I:%M %p}",
+    "format": "{:%H:%M}",
     "format-alt": "{:%A, %B %d, %Y (%R)}",
     "tooltip-format": "<tt><small>{calendar}</small></tt>",
     "calendar": {
@@ -151,5 +155,14 @@
     "tooltip-format-enumerate-connected": "{device_alias}\t{device_address}",
     "tooltip-format-enumerate-connected-battery": "{device_alias}\t{device_address}\t{device_battery_percentage}%",
     "on-click": "rofi-bluetooth -config ~/.config/rofi/menu.d/network.rasi -i"
+  }
+   },
+  "custom/weather": {
+    "format": " {}",
+    "tooltip": true,
+    "interval": 3600,
+    "on-click": "~/.config/hypr/scripts/weather.py && notify-send 'Updated weather!'",
+    "exec": "~/.config/hypr/scripts/weather.py",
+    "return-type": "json"
   }
 }
