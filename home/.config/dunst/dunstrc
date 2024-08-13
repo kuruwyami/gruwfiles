@@ -1,0 +1,26 @@
+[global]
+frame_color = "#282828"
+separator_color = "#ebdbb2"
+frame_color= "#ebdbb2"
+corner_radius = 7
+
+[base16_low]
+ msg_urgency = "low"
+background = "#282828"
+foreground = "#665c54"
+frame_color= "#ebdbb2"
+corner_radius = 7
+
+[base16_normal]
+msg_urgency = "normal"
+background = "#282828"
+foreground = "#d5c4a1"
+frame_color= "#ebdbb2"
+corner_radius = 7
+
+[base16_critical]
+msg_urgency = "critical"
+background = "#282828"
+foreground = "#ebdbb2"
+corner_radius = 7
+
