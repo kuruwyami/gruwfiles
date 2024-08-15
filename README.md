@@ -1,6 +1,7 @@
 Welcome!
 
 1:Required packages 
+
 An aur helper for installation, paru,yay...
 
 Note:Everything is literally optional lol.
