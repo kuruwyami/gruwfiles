@@ -31,9 +31,9 @@
     "orientation": "horizontal",
     "modules": [
       "tray",
-      "pulseaudio#mic",
-      "backlight",
-      "pulseaudio"
+      "battery",
+      "pulseaudio",
+      "pulseaudio#mic"
     ]
   },
   "group/scripts": {
@@ -41,6 +41,7 @@
     "modules": [
       "network",
       "bluetooth",
+      "backlight",
       "custom/weather",
       "hyprland/submap"
     ]
