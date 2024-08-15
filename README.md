@@ -33,13 +33,11 @@ Also i recommend installing qt6ct to change themes and icons, simply ```sudo vim
 to save and exit.To change theme i reccommend using Kvantum and changing theme in qt6ct application to Kvantum. 
 
 For .themes and .icons ,if you dont want to copy it,dont.If .themes and .icons already exists,just copy the things inside of the folder.(themes is not a really important 
-
 folder tho,it just contains kvantum theme to install manually.And Catppuccin themes are not even important,unless you are me :3)
 
-Not a really information but change keybinds as you need,i use alt instead of super(windows key) because my super key is broken,you can change $mainMod to SUPER via 
-
-```vim ~/.config/hypr/keybinds.conf``` (if you are using nano,you can simply change vim to nano)
+Not a really information but change keybinds as you need,i use alt instead of super(windows key) because my super key is broken,you can change $mainMod to SUPER via ```vim ~/.config/hypr/keybinds.conf``` (if you are using nano,you can simply change vim to nano)
 
 To select default applications,edit ~/.config/hypr/defaults.conf
 
+And,one small update,as you might know Dolphin doesn't set default apps and terminal,fix is already in the config.You have to install ```archlinux-xdg-menu``` package from arch repo,but if you don't need that fix(Maybe you are using another app,not sure) you can remove the line from ```~/.config/hypr/keybinds.conf```,also i added ```hyprlock``` to my config,but i use my own picture which is wont work for you.Edit the config file ```~/.config/hypr/hyprlock.conf```,thats all right now :)
 Report any issue.
