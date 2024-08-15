@@ -1,14 +1,16 @@
-Required packages 
 
+1:Required packages 
 An aur helper for installation, paru,yay...
 
-```kitty``` (terminal)
+Note:Everything is literally optional lol.
+
+```kitty``` (terminal,see 6)
 
 ```hyprland``` (Wm)
 
-```dolphin``` (WM)
+```dolphin``` (File manager,optional too.see 5.)
 
-```fastfetch```(fast neofetch alternative)
+```fastfetch```(fast neofetch alternative,optional but you have to change .zshrc to stop auto-starting Fastfetch.)
 
 ```wofi```(Like rofi or dmenu,a menu to launch apps)
 
@@ -16,29 +18,39 @@ An aur helper for installation, paru,yay...
 
 ```ttf-font-awesome``` (For waybar icons,if you are using Arch you can install it from aur via paru or yay,others,well not sure you have to search it,sorry)
 
-```zsh```(shell)
+```zsh```(shell,optional as well,you can use Fish if you want to,as an example)
 
-```starship```(Prompt)
+```starship```(Prompt,optional,remove command that starts Starship in .zshrc)
 
-```dunst```(notification deamon)
+```dunst```(notification deamon,you will need it tho)
 
-```spicetify```(optional,if you dont want it dont copy spicetify configration file)
+```spicetify```(very optional,if you dont want it dont copy spicetify configration file.[How to install?](https://spicetify.app/docs/advanced-usage/installation/))
 
-```waypaper``` (from aur too,wallpaper changer,you have to install hyprpaper too)
+```waypaper``` (from aur too,wallpaper changer,you have to install Hyprpaper too,optional,remove from auto-exec if you don't want to use Waypaper.)
 
-```grimshot```(Screenshot tool,install it from aur)
+```grimshot```(optional but you have to change the shortcut,screenshot tool,install it from aur)
 
 ```hyprlock```(Lock,if you don't want it you can just not install it and remove exec-once hyprlock bla bla from ```~/hypr/autoexec.conf``` 
-Also i recommend installing qt6ct to change themes and icons, simply ```sudo vim ~/etc/environment``` and then add ```QT_QPA_PLATFORMTHEME=qt6ct``` then press ESC, :wq 
 
+2:Configuration files that you might need
+To set and view default applications,this is the default apps file: ```~/.config/hypr/defaults.conf```
+To change keybinds or staring and thinking what is wrong with Kuruyami,use this file:```~/.config/hypr/keybinds.conf```
+And this is the file for the automatically executed apps and commands: ```~/.config/hypr/autoexec.conf```
+Hyprlock: ```~/.config/hypr/hyprlock.conf```
+Other things such as blur or animations is in the default Hyprland configration file,which is ```~/.config/hypr/hyprland.conf```
+
+3:GTK themes
+Also i recommend installing qt6ct to change themes and icons, simply ```sudo vim ~/etc/environment``` and then add ```QT_QPA_PLATFORMTHEME=qt6ct``` then press ESC, :wq 
 to save and exit.To change theme i reccommend using Kvantum and changing theme in qt6ct application to Kvantum. 
 
-For .themes and .icons ,if you dont want to copy it,dont.If .themes and .icons already exists,just copy the things inside of the folder.(themes is not a really important 
-folder tho,it just contains kvantum theme to install manually.And Catppuccin themes are not even important,unless you are me :3)
+4:Insert text here
+For .themes and .icons ,if you dont want to copy it,dont.If .themes and .icons already exists,just copy the things inside of the folder.(themes is not a really important folder tho,it just contains kvantum theme to install manually.And Catppuccin themes are not even important,unless you are me :3)
 
-Not a really important information but change keybinds as you need,i use alt instead of super(windows key) because my super key is broken,you can change $mainMod to SUPER via ```vim ~/.config/hypr/keybinds.conf``` (if you are using nano,you can simply change vim to nano)
+5:Dolphin default apps issue 
+As you might notice that Dolphin doesn't set default apps and Terminal for Hyprland,fix is already in the config.You have to install ```archlinux-xdg-menu``` package from arch repo,but if you don't need that fix(Maybe you are using another app,not sure) you can remove the line from auto executed applications,as i mentioned in 2.
 
-To select default applications,edit ~/.config/hypr/defaults.conf
+6:Another terminal
+If you are not going to use Kitty,Fastfetch picture might not work.You have to edit Fastfetch config,thats all right now :)
 
-And,one small update,as you might know Dolphin doesn't set default apps and terminal,fix is already in the config.You have to install ```archlinux-xdg-menu``` package from arch repo,but if you don't need that fix(Maybe you are using another app,not sure) you can remove the line from ```~/.config/hypr/keybinds.conf```,also i added ```hyprlock``` to my config,but i use my own picture which is wont work for you.Edit the config file ```~/.config/hypr/hyprlock.conf```,thats all right now :)
+
 Report any issue.
