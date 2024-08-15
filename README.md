@@ -53,24 +53,19 @@ Other things such as blur or animations is in the default Hyprland configration 
 
 3:GTK themes
 
-Also i recommend installing qt6ct to change themes and icons, simply ```sudo vim ~/etc/environment``` and then add ```QT_QPA_PLATFORMTHEME=qt6ct``` then press ESC, :wq 
-
-to save and exit.To change theme i reccommend using Kvantum and changing theme in qt6ct application to Kvantum. 
+Also i recommend installing qt6ct to change themes and icons, simply ```sudo vim ~/etc/environment``` and then add ```QT_QPA_PLATFORMTHEME=qt6ct``` then press ESC, :wq to save and exit.To change theme i reccommend using Kvantum and changing theme in qt6ct application to Kvantum. 
 
 
 
 
 4:Insert text here
 
-For .themes and .icons ,if you dont want to copy it,dont.If .themes and .icons already exists,just copy the things inside of the folder.(themes is not a really important 
-
-folder tho,it just contains kvantum theme to install manually.And Catppuccin themes are not even important,unless you are me :3)
+For .themes and .icons ,if you dont want to copy it,dont.If .themes and .icons already exists,just copy the things inside of the folder.(themes is not a really important folder tho,it just contains kvantum theme to install manually.And Catppuccin themes are not even important,unless you are me :3)
 
 
 5:Dolphin default apps issue 
 
 As you might notice that Dolphin doesn't set default apps and Terminal for Hyprland,fix is already in the config.You have to install ```archlinux-xdg-menu``` package 
-
 from arch repo,but if you don't need that fix(Maybe you are using another app,not sure) you can remove the line from auto executed applications,as i mentioned in 2.
 
 
