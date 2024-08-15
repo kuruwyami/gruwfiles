@@ -35,8 +35,8 @@ Note:Everything is literally optional lol.
 2:Configuration files that you might need
 To set and view default applications,this is the default apps file: ```~/.config/hypr/defaults.conf```
 To change keybinds or staring and thinking what is wrong with Kuruyami,use this file:```~/.config/hypr/keybinds.conf```
-And this is the file for the automatically executed apps and commands: ```~/.config/hypr/autoexec.conf```
-Hyprlock: ```~/.config/hypr/hyprlock.conf```
+And this is the file for the automatically executed apps and commands: ```~/.config/hypr/autoexec.conf```                                                                 
+Hyprlock: ```~/.config/hypr/hyprlock.conf```                                                                                                                              
 Other things such as blur or animations is in the default Hyprland configration file,which is ```~/.config/hypr/hyprland.conf```
 
 3:GTK themes
