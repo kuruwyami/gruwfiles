@@ -14,7 +14,7 @@
   "hyprland/workspaces": {
     "format":"{icon}",
     "format-icons": {
-    "urgent": "  ",
+    "urgent": " ",
     "active": "  ",
     "default": "  "
     },
@@ -40,7 +40,7 @@
     "orientation": "horizontal",
     "modules": [
       "network",
-      "battery",
+      "bluetooth",
       "custom/weather",
       "hyprland/submap"
     ]
