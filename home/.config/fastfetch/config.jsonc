@@ -3,44 +3,50 @@
 "logo": {
          "type": "kitty-direct",
          "source": "~/.config/fastfetch/basil.png",
-         "width": 16,
-         "height": 7
+         "width": 18,
+         "height": 9
     },
     "modules": [
         {
-            "key": "",
-            "keyColor": "38;5;210",
+            "key": "  ",
+            "keyColor": "yellow",
             "type": "os"
         },
         {
-            "key": "",
-            "keyColor": "38;5;84",
+            "key": "  ",
+            "keyColor": "yellow",
             "type": "kernel"
         },
         {
-            "key": "",
-            "keyColor": "38;5;147",
+            "key": "  ",
+            "keyColor": "yellow",
             "type": "shell"
         },
         {
-            "key": "",
-            "keyColor": "38;5;200",
+            "key": "  ",
+            "keyColor": "yellow",
             "type": "packages"
         },
         {
-            "key": "",
-            "keyColor": "38;5;44",
+            "key": "  ",
+            "keyColor": "yellow",
             "type": "wm"
         },
         {
-            "key": "",
-            "keyColor": "38;5;75",
+            "key": "  ",
+            "keyColor": "yellow",
             "type": "cpu"
         },
         {
-            "key": "",
-            "keyColor": "38;5;123",
+            "key": "  ",
+            "keyColor": "yellow",
             "type": "memory"
+        },
+    
+        {
+            "type": "media",
+            "key": "  ",
+            "keyColor": "yellow"
         }
     ]
 }
