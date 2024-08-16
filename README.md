@@ -1,4 +1,4 @@
-<p align="left">Welcome! <p align="right">[![Hits](https://hits.sh/github.com/kuruwyami/kurufiles.svg?style=flat-square&label=Wow!%3A&color=262626&labelColor=262626)](https://hits.sh/github.com/kuruwyami/kurufiles/)
+<p align="left">Welcome! <p align="right">"[![Hits](https://hits.sh/github.com/kuruwyami/kurufiles.svg?style=flat-square&label=Wow!%3A&color=262626&labelColor=262626)](https://hits.sh/github.com/kuruwyami/kurufiles/)"
 
 1:Required packages 
 
