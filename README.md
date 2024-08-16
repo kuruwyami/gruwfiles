@@ -76,9 +76,7 @@ If you are not going to use Kitty,Fastfetch picture might not work.You have to e
 
 
 7:How it looks?:
-![2024-08-15T00:19:28,775569791-06:00](https://github.com/user-attachments/assets/c8a6b7b0-0ca1-4f33-a416-3bd99f1d2c68)
-
-![2024-08-15T00:19:28,775569791-06:00](https://github.com/user-attachments/assets/7f2f8eba-950d-4ebe-a86a-29992dcbc115)
+![2024-08-15T00:15:26,558065655-06:00](https://github.com/user-attachments/assets/7915f884-616f-4fe5-825d-5938eac1e63a) ![2024-08-15T00:19:28,775569791-06:00](https://github.com/user-attachments/assets/7f2f8eba-950d-4ebe-a86a-29992dcbc115)
 
 <p align="center">Report any issue,thanks for using my dots!
 
