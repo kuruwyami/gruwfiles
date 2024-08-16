@@ -75,7 +75,10 @@ from arch repo,but if you don't need that fix(Maybe you are using another app,no
 
 If you are not going to use Kitty,Fastfetch picture might not work.You have to edit Fastfetch config,thats all right now :)
 
-7:How it looks?:
+7:Icons 
+If icons doesn't work or you are just wondering the source,[click.](https://github.com/jmattheis/gruvbox-dark-icons-gtk)
+
+8:How it looks?:
 ![2024-08-15T00:15:26,558065655-06:00](https://github.com/user-attachments/assets/7915f884-616f-4fe5-825d-5938eac1e63a) ![2024-08-15T00:19:28,775569791-06:00](https://github.com/user-attachments/assets/7f2f8eba-950d-4ebe-a86a-29992dcbc115)
 
 <p align="center">Report any issue,thanks for using my dots!
