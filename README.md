@@ -1,5 +1,6 @@
-<p align="left">Welcome! <p align="right">"[![Hits](https://hits.sh/github.com/kuruwyami/kurufiles.svg?style=flat-square&label=Wow!%3A&color=262626&labelColor=262626)](https://hits.sh/github.com/kuruwyami/kurufiles/)"
-
+<p align="left">Welcome!
+  
+  
 1:Required packages 
 
 An aur helper for installation, paru,yay...
@@ -78,4 +79,7 @@ If you are not going to use Kitty,Fastfetch picture might not work.You have to e
 ![2024-08-15T00:15:26,558065655-06:00](https://github.com/user-attachments/assets/7915f884-616f-4fe5-825d-5938eac1e63a) ![2024-08-15T00:19:28,775569791-06:00](https://github.com/user-attachments/assets/7f2f8eba-950d-4ebe-a86a-29992dcbc115)
 
 <p align="center">Report any issue,thanks for using my dots!
+
+
+[![Hits](https://hits.sh/github.com/kuruwyami/kurufiles.svg?style=flat-square&label=Wow!%3A&color=262626&labelColor=262626)](https://hits.sh/github.com/kuruwyami/kurufiles/)
 
