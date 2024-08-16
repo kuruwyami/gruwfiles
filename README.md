@@ -1,4 +1,4 @@
-<p align="left">Welcome!
+Welcome!If you got any issues,first look in this readme filethen report it to my [Discord server.](https://discord.gg/HPJnk5JhAm)
   
   
 1:Required packages 
