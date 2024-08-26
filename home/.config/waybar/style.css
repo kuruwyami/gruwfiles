@@ -3,13 +3,13 @@
 * {
   background: transparent;
   font-family: "Google Sans","Font Awesome";
-  font-size: 12px;
+  font-size: 10px;
   color: @foreground;
   margin: 0.5px 0px 0.5px 0.5px;
 }
 
 #waybar {
-  min-height: 12px;
+  min-height: 10px;
 }
 
 #tray menu,
@@ -19,7 +19,7 @@ tooltip {
 
 #window {
     background: @background;
-    padding: 5px;
+    padding: 1px;
 }
 
 #scroll,

@@ -1,6 +1,7 @@
 {
   "layer": "top",
   "position": "top",
+  "gtk-layer-shell": true,
   "modules-left": [ 
     "group/scripts"
   ],
@@ -111,6 +112,8 @@
 	},
 	"format": "{icon} {capacity}%",
 	"format-icons": ["", "", "", "", ""],
+	"format-charging":["", "", "", "", ""],
+	
 	"max-length": 25
 },
 
