@@ -12,6 +12,7 @@ Note:Everything is literally optional lol.
 ```hyprland``` (Wm)
 
 ```dolphin``` (File manager,optional too.see 5.)
+
 ```archlinux-xdg-menu```(For Dolphin,you will need it. :> see 5.) 
 
 ```fastfetch```(fast neofetch alternative,optional but you have to change .zshrc to stop auto-starting Fastfetch.)
@@ -37,6 +38,7 @@ Note:Everything is literally optional lol.
 ```hyprlock```(Lock,if you don't want it you can just not install it and remove exec-once hyprlock bla bla from ```~/hypr/autoexec.conf``` 
 
 ```pavucontrol```(When you middle click to the voice icon in Waybar,you can edit some settings for audio,highly optional)
+
 ```cava```(COnsole-based audio visualizer for Alsa,don't copy cava config file if you don't want it.)
 
 2:Configuration files that you might need
