@@ -37,7 +37,7 @@ Note:Everything is literally optional lol.
 ```hyprlock```(Lock,if you don't want it you can just not install it and remove exec-once hyprlock bla bla from ```~/hypr/autoexec.conf``` 
 
 ```pavucontrol```(When you middle click to the voice icon in Waybar,you can edit some settings for audio,highly optional)
-
+```cava```(COnsole-based audio visualizer for Alsa,don't copy cava config file if you don't want it.)
 
 2:Configuration files that you might need
 
@@ -84,7 +84,8 @@ If icons doesn't work or you are just wondering the source,[click.](https://gith
 
 
 8:How it looks?:
-![image](https://github.com/user-attachments/assets/fe7bf436-8565-426c-bd61-52704aa24ce0) ![image](https://github.com/user-attachments/assets/97987be7-73a9-4f58-8c5b-844ee5a44a60)
+![image](https://github.com/user-attachments/assets/b31ee9b6-f815-475c-8e03-9d57883318f6)  ![image](https://github.com/user-attachments/assets/f3fa58a5-60a8-448a-a421-1a0138967ef8)
+
 
 
 <p align="center">Report any issue,thanks for using my dots!
