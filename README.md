@@ -12,6 +12,7 @@ Note:Everything is literally optional lol.
 ```hyprland``` (Wm)
 
 ```dolphin``` (File manager,optional too.see 5.)
+```archlinux-xdg-menu```(For Dolphin,you will need it. :> see 5.) 
 
 ```fastfetch```(fast neofetch alternative,optional but you have to change .zshrc to stop auto-starting Fastfetch.)
 
@@ -35,7 +36,7 @@ Note:Everything is literally optional lol.
 
 ```hyprlock```(Lock,if you don't want it you can just not install it and remove exec-once hyprlock bla bla from ```~/hypr/autoexec.conf``` 
 
-
+```pavucontrol```(When you middle click to the voice icon in Waybar,you can edit some settings for audio,highly optional)
 
 
 2:Configuration files that you might need
@@ -83,7 +84,8 @@ If icons doesn't work or you are just wondering the source,[click.](https://gith
 
 
 8:How it looks?:
-![2024-08-15T00:15:26,558065655-06:00](https://github.com/user-attachments/assets/7915f884-616f-4fe5-825d-5938eac1e63a) ![2024-08-15T00:19:28,775569791-06:00](https://github.com/user-attachments/assets/7f2f8eba-950d-4ebe-a86a-29992dcbc115)
+![image](https://github.com/user-attachments/assets/fe7bf436-8565-426c-bd61-52704aa24ce0) ![image](https://github.com/user-attachments/assets/97987be7-73a9-4f58-8c5b-844ee5a44a60)
+
 
 <p align="center">Report any issue,thanks for using my dots!
 
