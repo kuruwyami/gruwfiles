@@ -3,21 +3,28 @@
   "position": "top",
   "gtk-layer-shell": true,
   "modules-left": [ 
-    "group/scripts"
+    "network",
+    "bluetooth",
+    "backlight",
+    "custom/updates"
   ],
   "modules-center": [
-      "hyprland/workspaces"
+  "hyprland/workspaces"      
   ],
   "modules-right": [
-    "group/scroll",
-    "clock"
-  ],
+     "tray",
+     "clock",
+     "battery",
+     "pulseaudio",
+     "pulseaudio#mic",
+     "custom/qs"
+   ],
   "hyprland/workspaces": {
     "format":"{icon}",
     "format-icons": {
-    "urgent": "     ",
-    "active": "     ",
-    "default": "     "
+    "urgent": "  ",
+    "active": "  ",
+    "default": "  "
     },
     "on-click": "activate"
  
@@ -35,6 +42,7 @@
       "pulseaudio",
       "pulseaudio#mic",
       "battery"
+      
     ]
   },
   "group/scripts": {
@@ -58,16 +66,16 @@
     ]
   },
   "pulseaudio#mic": {
-    "format": "{format_source}",
-    "format-source": " {volume}",
+    "format": "|{format_source}",
+    "format-source": "  {volume}",
     "format-source-muted": "",
     "on-click": "pactl set-source-mute 0 toggle",
     "on-scroll-down": "pactl set-source-volume 0 -1%",
     "on-scroll-up": "pactl set-source-volume 0 +1%"
   },
   "pulseaudio": {
-    "format": "{icon} {volume} ",
-    "format-bluetooth": "{icon} {volume} ",
+    "format": "| {icon} {volume}",
+    "format-bluetooth": "{icon} {volume}",
     "format-muted": "󰝟",
     "format-icons": {
       "headphones": "",
@@ -88,7 +96,7 @@
   },
 
   "network": {
-    "format-wifi": "  {bandwidthDownBits}",
+    "format-wifi": "   {bandwidthDownBits} |",
     "format-ethernet": " {bandwidthDownBits}",
     "format-disconnected": "",
     "format-linked": "",
@@ -110,7 +118,7 @@
 		"warning": 30,
 		"critical": 15
 	},
-	"format": "{icon} {capacity}%",
+	"format": "| {icon} {capacity}%",
 	"format-icons": ["", "", "", "", ""],
 	"format-charging":["", "", "", "", ""],
 	
@@ -134,14 +142,15 @@
     "tooltip": false
   },
   "clock": {
-    "format": "{:%H:%M}",
-    "format-alt": "{:%A, %B %d, %Y (%R)}",
-    "tooltip-format": "<tt><small>{calendar}</small></tt>",
+    "format": "|  {:%H:%M}",
+    "format-alt": "|{:%A, %B %d, %Y (%R)}",
+    "tooltip-format": "|<tt><small>{calendar}</small></tt>",
     "calendar": {
       "mode": "month",
       "mode-mon-col": 3,
       "weeks-pos": "right",
       "on-scroll": 1,
+      "on-middle-click": "ags -t datemenu",
       "on-click-right": "mode",
       "format": {
         "today": "<span color='#a6e3a1'><b><u>{}</u></b></span>"
@@ -149,24 +158,40 @@
     }
   },
   "bluetooth": {
-    "format-on": "",
-    "format-off": "",
+    "format-on": " Enabled |",
+    "format-off": " Disabled |",
     "format-disabled": "",
-    "format-connected": "<b>",
-    "format-connected-battery": " {device_battery_percentage}%",
+    "format-connected": " Connected |",
+    "format-connected-battery": " { device_battery_percentage}% |",
     "tooltip-format": "{controller_alias}\t{controller_address}\n\n{num_connections} connected",
     "tooltip-format-connected": "{controller_alias}\t{controller_address}\n\n{num_connections} connected\n\n{device_enumerate}",
     "tooltip-format-enumerate-connected": "{device_alias}\t{device_address}",
     "tooltip-format-enumerate-connected-battery": "{device_alias}\t{device_address}\t{device_battery_percentage}%",
     "on-click": "rofi-bluetooth -config ~/.config/rofi/menu.d/network.rasi -i"
-  }
-   },
+  },
+      "custom/qs": {
+      	"format":"|  ",
+       	"on-click": "ags -t quicksettings",
+      	"tooltip": false
+      },
+       "custom/updates": {
+       "format": "| {icon} {}",
+       "return-type": "json",
+       "format-icons": {
+           "has-updates": "",
+           "updated": "",
+           "updated": "",
+          "interval": 3600,
+       },
+       "exec-if": "which waybar-module-pacman-updates",
+       "exec": "waybar-module-pacman-updates",
+       "on-click": "foot -e update"
+},
   "custom/weather": {
-    "format": " {}",
-    "tooltip": true,
-    "interval": 3600,
-    "on-click": "~/.config/hypr/scripts/weather.py && notify-send 'Updated weather!'",
-    "exec": "~/.config/hypr/scripts/weather.py",
-    "return-type": "json"
+    "exec": "python ~/.config/waybar/scripts/weather.py",
+    "restart-interval": 300,
+    "return-type": "json",
+    "on-click": "xdg-open https://weather.com/en-IN/weather/today/l/23572c2998b3cfe86d9a16cdf83e9b097a534fa917fe91a9a4e1e9437bb4266e"
+    // "format-alt": "{alt}",
   }
 }

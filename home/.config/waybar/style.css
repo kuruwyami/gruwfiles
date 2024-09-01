@@ -1,117 +1,145 @@
 @import "./colors.css";
 
 * {
-  background: transparent;
-  font-family: "Google Sans","Font Awesome";
-  font-size: 10px;
-  color: @foreground;
-  margin: 0.5px 0px 0.5px 0.5px;
+    font-family: "JetBrainsMono Nerd Font";
+    font-size: 11px;
+    /* font-weight: bold; */
+   border:2px @foreground;
+   border-radius: 19px;
+   padding: 1;
+   margin-right:1;
+   margin-left:1;
+
 }
 
-#waybar {
-  min-height: 10px;
+window#waybar {
+    background-color: @background;
+    border-radius: 10px;
+    min-height:9px;
+    border:2px solid @foreground;
+    
 }
 
-#tray menu,
+
+.modules-right {
+    font-size: 10px;
+    margin-right: 0.5rem;
+}
+.modules-left {
+    margin-left: 0.5rem;
+}
 tooltip {
-  background: @background;
-}
-
-#window {
     background: @background;
-    padding: 1px;
+    border-radius: 10px;
 }
-
-#scroll,
-#hardware,
-#scripts,
-#custom-weather,
-#workspaces {
-  background: @background;
-  padding: 2px;
-  margin-right: 4px;
-  border: 1px solid @foreground;
-  border-radius: 0.75em;
-  /* border: 1px solid alpha(shade(@active, 0.6),0.6); */
+tooltip label {
+    color: @foreground;
+    background-color: @bacground;
+    border-radius: 10px;
 }
-
-#tray {
-  padding: 0px 8px 0px 8px;
+tooltip * {
+    border-radius: 10px;
 }
-
 #workspaces button {
-  padding: 0px;
-  color: shade(@background, 0.8);
+    margin: 0;
+    color: @foreground;
+    font-weight: bolder;
+    font-style: normal;
+    margin: 0.2rem 0.1rem;
+    border-radius: 20px;
 }
-#workspaces button.urgent {
-  text-decoration: underline;
-  font-weight: bold;
+button:hover {
+    box-shadow: inherit;
+    text-shadow: inherit;
+    background: inherit;
 }
 #workspaces button.active {
-  color: shade(@background, 0.8 );
+    color: @foreground;  
+    transition: all 0.1s ease-in-out;
 }
 
-#cpu,
 #clock,
-#network,
-#submap,
-#bluetooth,
-#disk,
-#memory,
-#pulseaudio,
-#pulseaudio.mic,
-#battery,
-#backlight {
-  padding: 0px 6px 0px 6px;
-}
-
-#submap,
-#bluetooth.connected {
-  background: shade(alpha(@foreground, 0.1), 0.8);
-}
-
-#custom-cputemp.cool {
-  color:#7AA2F7;
-}
-
-#custom-cputemp.warm {
-  color:#a6e3a1;
-}
-
-#custom-cputemp.warn {
-  color:#fab387;
-}
-
-#custom-cputemp.critical {
-  color:#d78787;
-}
-
-#network.disabled,
-#network.disconnected {
-  color: #d78787;
-}
-@keyframes blink {
-  to {
-    background-color: alpha(red, 0.6);
+#custom-weather {
+    font-family: "GE Inspira";
+    font-weight: bolder;
     color: @foreground;
-  }
-}
-
-
-#battery.warning:not(.charging),
-#battery.critical:not(.charging) {
-  animation-name: blink;
-  animation-duration: 1s;
-  animation-timing-function: linear;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
 }
 
 #clock {
-  margin-left: 0px;
-  background: @background;
- border: 1px solid #FBF1C7;
-    border-radius: 0.75em;
+    padding: 0 0 0 1.5em;
+}
+#custom-weather {
+    padding: 0 1.5em 0 0.5em;
+}
+#memory {
+    color: @foreground;
+    padding: 0 0.3em;
+}
 
+#pulseaudio {
+    margin: 0;
+    padding: 0 0.5em 0 0.4em;
+    color: @foreground;
+}
 
+#backlight {
+    margin: 0;
+    padding: 0 0.5em 0 0.4em;
+    color: @foreground;
+}
+#cpu {
+    margin: 0;
+    padding: 0 0.1em 0 0.1em;
+    color: #a9b665;
+}
+#network {
+    margin: 0;
+    padding: 0 0.4em 0 0.5em;
+    color: @foreground;
+}
+#custom-cycle_wall {
+    margin: 0;
+    padding: 0 0.5em;
+    color: #d3869b;
+}
+
+#language {
+    margin: 0;
+    padding: 0 0.1em;
+    color: @foreground;
+}
+#tray {
+    margin: 0;
+    padding: 0 0.2em;
+    color: @foreground;
+}
+#battery {
+    color: @cursor;
+}
+#custom-weather.severe {
+    color: #eb937d;
+}
+
+#custom-weather.sunnyDay {
+    color: #c2ca76;
+}
+
+#custom-weather.clearNight {
+    color: #2b2b2a;
+}
+
+#custom-weather.cloudyFoggyDay, #custom-weather.cloudyFoggyNight {
+    color: #c2ddda;
+}
+
+#custom-weather.rainyDay, #custom-weather.rainyNight {
+    color: #5aaca5;
+}
+
+#custom-weather.showyIcyDay, #custom-weather.snowyIcyNight {
+    color: #d6e7e5;
+}
+
+#custom-weather.default {
+    color: #dbd9d8;
 }
