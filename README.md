@@ -1,3 +1,5 @@
+<p align="center">IMPORTANT:I switched to latte theme,so this is no longer maintained and beta-ish.
+  
 Welcome!If you got any issues,first look in this readme file then report it to my Discord username:kuruwyami.I will answer you quick as possible.
   
   
@@ -40,7 +42,7 @@ Note:Everything is literally optional lol.
 ```pavucontrol```(When you middle click to the voice icon in Waybar,you can edit some settings for audio,highly optional)
 
 ```cava```(COnsole-based audio visualizer for Alsa,don't copy cava config file if you don't want it.)
-
+```aylurs-gtk-shell``` (If you want to,and also i didn't set it well so it's kinda hard to enable.That gnome-like shell)
 2:Configuration files that you might need
 
 To set and view default applications,this is the default apps file: ```~/.config/hypr/defaults.conf```
@@ -80,15 +82,13 @@ If you are not going to use Kitty,Fastfetch picture might not work.You have to e
 
 
 7:Icons                                                                                                                      
-If icons doesn't work or you are just wondering the source,[click.](https://github.com/jmattheis/gruvbox-dark-icons-gtk)
-
+If icons doesn't work or you are just wondering the source,[click.](https://github.com/jmattheis/gruvbox-dark-icons-gtk) 
 
 
 
 8:How it looks?:
-![image](https://github.com/user-attachments/assets/b31ee9b6-f815-475c-8e03-9d57883318f6)  ![image](https://github.com/user-attachments/assets/f3fa58a5-60a8-448a-a421-1a0138967ef8)
 
-
+![image](https://github.com/user-attachments/assets/3a836303-5d2e-4d1e-b7e4-7ebc533b9139) ![image](https://github.com/user-attachments/assets/1e5415d2-4559-4a65-8bed-12086e2d92ae)
 
 <p align="center">Report any issue,thanks for using my dots!
 
